@@ -96,7 +96,7 @@ module.exports = env => {
       filename: "[name].[contenthash].js"
     },
     plugins: [
-      new MiniCssExtractPlugin({ filename: 'page-style.css' }),
+      new MiniCssExtractPlugin({ filename: '[name]-style.css' }),
       new HtmlWebpackPlugin({
         title: 'Extension App',
         template: 'src/index.html',
